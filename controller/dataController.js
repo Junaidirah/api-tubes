@@ -20,7 +20,7 @@ const sendData = async (req, res) => {
       .json({ success: true, message: "data send successfully", data: data });
   } catch (error) {
     console.error("Error sending data:", error); // Log any errors
-    res.status(500).json({ success: false, message: "Data not found" });
+    res.status(500).json({ success: false, message: "Data not send" });
   }
 };
 
