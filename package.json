@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "prisma-generate": "prisma generate",
+    "vercel-build": "npm run prisma-generate && npm run build"
   },
   "keywords": [],
   "author": "",
