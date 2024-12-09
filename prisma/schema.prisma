@@ -15,7 +15,7 @@ datasource db {
 
 model Data{
   id            Int             @id @default(autoincrement())
-  temp        String?
+  temperature String?
   humidity    String?
   nh3         String?
   @@map("datas")

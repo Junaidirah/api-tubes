@@ -7,7 +7,7 @@ const sendData = async (data) => {
   console.log("Repository received data:", data);
   return await prisma.data.create({
     data: {
-      temp: data.temp,
+      temperature: data.temperature,
       humidity: data.humidity,
       nh3: data.nh3,
     },
